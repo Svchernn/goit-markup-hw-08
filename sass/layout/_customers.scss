@@ -1,0 +1,34 @@
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.customers-link {
+  width: 170px;
+  height: 92px;
+  @extend %align;
+  justify-content: center;
+  border: 1px solid var(--light-theme-color);
+  border-radius: 4px;
+  color: var(--accent-color);
+
+  transition: fill var(--transition-dur) var(--transition-func),
+    border var(--transition-dur) var(--transition-func);
+
+  &:hover,
+  &:focus {
+    fill: currentColor;
+    border: 1px solid currentColor;
+  }
+}
+
+.customers-logo {
+  fill: var(--light-theme-color);
+  transition: fill var(--transition-dur) var(--transition-func);
+
+  .customers-link:hover &,
+  .customers-link:focus & {
+    fill: currentColor;
+  }
+}

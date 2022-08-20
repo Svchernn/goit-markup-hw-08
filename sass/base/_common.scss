@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  transition: background-color var(--transition-dur) var(--transition-func),
+    color var(--transition-dur) var(--transition-func);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--third-theme-color);
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--third-theme-color);
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  line-height: 1.19;
+}

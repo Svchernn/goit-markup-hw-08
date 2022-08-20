@@ -1,0 +1,40 @@
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal {
+  @include abs-position(50%, auto, auto, 50%);
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  height: 581px;
+  padding-left: 40px;
+  padding-top: 44px;
+  padding-right: 40px;
+  padding-bottom: 36px;
+  background-color: var(--third-theme-color);
+  transition: transform var(--transition-dur) var(--transition-func),
+    opacity var(--transition-dur) var(--transition-func),
+    visibility var(--transition-dur) var(--transition-func);
+}
+
+.modal-close__btn {
+  @include abs-position(10px, 10px, auto, auto);
+  @extend %align;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-close__icon {
+  transition: fill var(--transition-dur) var(--transition-func);
+
+  .modal-close__btn:hover &,
+  .modal-close__btn:focus & {
+    fill: var(--accent-color);
+  }
+}

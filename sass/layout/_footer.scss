@@ -1,0 +1,120 @@
+.footer {
+  background-color: var(--dark-theme-color);
+  padding: 60px 0;
+
+  & .logo-link {
+    display: block;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  &-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &_wrapper {
+    margin-right: 70px;
+    width: 231px;
+  }
+}
+
+.adress {
+  font-style: normal;
+
+  &-footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &-footer__contact {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-dur) var(--transition-func);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+
+  &-footer__link {
+    line-height: 1.71;
+    color: var(--third-theme-color);
+  }
+}
+
+.join__wrapper {
+  margin-right: 93px;
+}
+
+.join-subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--third-theme-color);
+}
+
+.join__item .social-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--transition-dur) var(--transition-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.join__link .social-list__icon {
+  fill: var(--third-theme-color);
+}
+
+.join-form {
+  display: flex;
+  gap: 12px;
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--third-theme-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--dark-theme-color);
+    transition: border-color var(--transition-dur) var(--transition-func);
+
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__btn {
+    @extend %align;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--third-theme-color);
+    background: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
