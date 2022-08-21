@@ -1,6 +1,5 @@
-.description-list {
-  display: flex;
-  justify-content: space-between;
+.discription-list {
+  display: block;
 
   &__subtitle {
     margin-bottom: 10px;
@@ -20,11 +19,41 @@
   }
 
   &__thumb {
-    @extend %align;
-    justify-content: center;
+    display: block;
     background-color: var(--secondary-theme-color);
     margin-bottom: 30px;
     border-radius: 4px;
     height: 120px;
   }
 }
+
+// .description-list {
+//   display: flex;
+//   justify-content: space-between;
+
+//   &__subtitle {
+//     margin-bottom: 10px;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     color: var(--primary-text-color);
+//   }
+
+//   &__text {
+//     line-height: 1.71;
+//     color: var(--secondary-text-color);
+//   }
+
+//   &__item {
+//     width: 270px;
+//   }
+
+//   &__thumb {
+//     @extend %align;
+//     justify-content: center;
+//     background-color: var(--secondary-theme-color);
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+//     height: 120px;
+//   }
+// }

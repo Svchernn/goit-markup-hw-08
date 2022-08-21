@@ -69,20 +69,57 @@
             <use href="./images/sprite.svg#icon-close-modal"></use>
           </svg>
         </button>
+        <ul class="menu-mobile-nav list">
+          <li class="menu-mobile-nav__item">
+            <a class="menu-mobile-nav__link current link" href="index.html">Студія</a>
+          </li>
+          <li class="menu-mobile-nav__item">
+            <a class="menu-mobile-nav__link link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu-mobile-nav__item">
+            <a class="menu-mobile-nav__link link" href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-contact-list list">
+          <li class="mobile-contact-list__item">
+            <a class="mobile-contact-list__link-accent link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contact-list__item">
+            <a class="mobile-contact-list__link link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-list list">
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="">Instagram </a>
+          </li>
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="">Twitter </a>
+          </li>
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="">Facebook </a>
+          </li>
+          <li class="mobile-social-list__item">
+            <a class="mobile-social-list__link link" href="">LinkedIn </a>
+          </li>
+        </ul>
       </div>
     </div>
     <main>
       <!-- HERO -->
-      <!-- <section class="hero overlay">
+      <section class="hero overlay">
         <div class="container">
           <h1 class="hero__name">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- DESCRIPTION -->
-      <!-- <section class="description section">
+      <section class="description section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наші переваги</h2>
           <ul class="description-list list">
@@ -132,7 +169,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ABOUT -->
       <!-- <section class="about section">
         <div class="container">
@@ -475,7 +512,7 @@
 
     <!-- BACKDROP -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close__btn" data-modal-close>
           <svg class="modal-close__icon" width="18px" height="18px">
@@ -487,45 +524,42 @@
           <label class="modal-form__field">
             <span class="modal-form__desc">Ім'я</span>
             <span class="modal-form__wrapper">
-            <input
-              type="text"
-              name="user_name"
-              class="modal-form__input"
-              required
-              pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
-              minlength="2"
-            />
-            <svg class="modal-form__icon" width="18px" height="18px">
+              <input
+                type="text"
+                name="user_name"
+                class="modal-form__input"
+                required
+                pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+                minlength="2"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
-              </span>
+            </span>
           </label>
           <label class="modal-form__field">
             <span class="modal-form__desc"> Телефон </span>
             <span class="modal-form__wrapper">
-            <input
-              type="tel"
-              name="user_phone"
-              class="modal-form__input"
-              required
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-            />
-            <svg class="modal-form__icon" width="18px" height="18px">
-              <use href="./images/sprite.svg#icon-phone-bl"></use>
-            </svg>
+              <input
+                type="tel"
+                name="user_phone"
+                class="modal-form__input"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-phone-bl"></use>
+              </svg>
             </span>
           </label>
           <label class="modal-form__field">
             <span class="modal-form__desc"> Пошта </span>
             <span class="modal-form__wrapper">
-            <input type="email" 
-            name="user_email" 
-            class="modal-form__input" 
-            required />
-            <svg class="modal-form__icon" width="18px" height="18px">
-              <use href="./images/sprite.svg#icon-email-bl"></use>
-            </svg>
+              <input type="email" name="user_email" class="modal-form__input" required />
+              <svg class="modal-form__icon" width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-email-bl"></use>
+              </svg>
             </span>
           </label>
           <label class="modal-form__mes">
@@ -534,13 +568,13 @@
               name="user_message"
               class="modal-form__text"
               placeholder="Введіть текст"
-              ></textarea>
+            ></textarea>
           </label>
-          <input 
-          id="user-privacy" 
-          type="checkbox" 
-          name="user_privacy"
-          class="modal-form__check visually-hidden"
+          <input
+            id="user-privacy"
+            type="checkbox"
+            name="user_privacy"
+            class="modal-form__check visually-hidden"
           />
           <label for="user-privacy" class="modal-form__check-desc">
             <span class="modal-form__fake">
@@ -548,15 +582,16 @@
                 <use href="./images/sprite.svg#icon-check"></use>
               </svg>
             </span>
-            Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="link-privacy"> Умови договору </a></label>
-        <button type="submit" class="modal-form__btn button">Відправити</button>
+            Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="link-privacy">
+              Умови договору
+            </a></label
+          >
+          <button type="submit" class="modal-form__btn button">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    
-
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>

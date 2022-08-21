@@ -91,9 +91,16 @@
   justify-content: center;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__fake {
