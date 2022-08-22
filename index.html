@@ -171,7 +171,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="about__list list">
@@ -179,7 +179,11 @@
               <div class="about__wrapper">
                 <img
                   class="about-img"
-                  src="./images/common/box1.jpg"
+                  src="./images/common/desktop/desktop-app-370/desktop-app-370.jpg"
+                  srcset="
+                    ./images/common/desktop/desktop-app-370/desktop-app-370.jpg    1x,
+                    ./images/common/desktop/desktop-app-370/desktop-app-370@2x.jpg 2x
+                  "
                   alt="робота над проєктом"
                   width="370"
                   height="294"
@@ -191,7 +195,11 @@
               <div class="about__wrapper">
                 <img
                   class="about-img"
-                  src="./images/common/box2.jpg"
+                  src="./images/common/desktop/mobile-app-370/mobile-app-370.jpg"
+                  srcset="
+                    /images/common/desktop/mobile-app-370/mobile-app-370.jpg    1x,
+                    /images/common/desktop/mobile-app-370/mobile-app-370@2x.jpg 2x
+                  "
                   alt="робота над адаптацією"
                   width="370"
                   height="294"
@@ -203,7 +211,11 @@
               <div class="about__wrapper">
                 <img
                   class="about-img"
-                  src="./images/common/box3.jpg"
+                  src="./images/common/desktop/design-solutions-370/design-solutions-370.jpg"
+                  srcset="
+                    ./images/common/desktop/design-solutions-370/design-solutions-370.jpg    1x,
+                    ./images/common/desktop/design-solutions-370/design-solutions-370@2x.jpg 2x
+                  "
                   alt="робота над дизайном"
                   width="370"
                   height="294"
@@ -213,16 +225,70 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- TEAM -->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img class="team-img" src="./images/team/ihor-demynenko.jpg" alt="наші працівники" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/igor-270/igor-270.webp    1x,
+                    ./images/team/desktop/igor-270/igor-270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/igor-270/igor-270.jpg    1x,
+                    ./images/team/desktop/igor-270/igor-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/igor-354/igor-354.webp    1x,
+                    ./images/team/tablet/igor-354/igor-354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/igor-354/igor-354.jpg    1x,
+                    ./images/team/tablet/igor-354/igor-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/igor-450/igor-450.webp    1x,
+                    ./images/team/mobile/igor-450/igor-450@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/igor-450/igor-450.jpg    1x,
+                    ./images/team/mobile/igor-450/igor-450@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+
+                <img
+                  class="team-img"
+                  src="./images/team/desktop/igor-270/igor-270.jpg"
+                  alt="наші працівники"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -259,7 +325,61 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-img" src="./images/team/olga-repina.jpg" alt="наши сотрудники" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/olga-270/olga-270.webp    1x,
+                    ./images/team/desktop/olga-270/olga-270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/olga-270/olga-270.jpg    1x,
+                    ./images/team/desktop/olga-270/olga-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/olga-354/olga-354.webp    1x,
+                    ./images/team/tablet/olga-354/olga-354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/olga-354/olga-354.jpg    1x,
+                    ./images/team/tablet/olga-354/olga-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/olga-450/olga-450.webp    1x,
+                    ./images/team/mobile/olga-450/olga-450@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/olga-450/olga-450.jpg    1x,
+                    ./images/team/mobile/olga-450/olga-450@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+
+                <img
+                  class="team-img"
+                  src="./images/team/desktop/olga-270/olga-270.jpg"
+                  alt="наші працівники"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -296,7 +416,61 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-img" src="./images/team/nickolay-tarasov.jpg" alt="наши сотрудники" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/nikolay-270/nikolay-270.webp    1x,
+                    ./images/team/desktop/nikolay-270/nikolay-270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/nikolay-270/nikolay-270.jpg    1x,
+                    ./images/team/desktop/nikolay-270/nikolay-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/nikolay-354/nikolay-354.webp    1x,
+                    ./images/team/tablet/nikolay-354/nikolay-354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/nikolay-354/nikolay-354.jpg    1x,
+                    ./images/team/tablet/nikolay-354/nikolay-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/nikolay-450/nikolay-450.webp    1x,
+                    ./images/team/mobile/nikolay-450/nikolay-450@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/nikolay-450/nikolay-450.jpg    1x,
+                    ./images/team/mobile/nikolay-450/nikolay-450@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+
+                <img
+                  class="team-img"
+                  src="./images/team/desktop/nikolay-270/nikolay-270.jpg"
+                  alt="наші працівники"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -333,7 +507,61 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-img" src="./images/team/mickhail-ermakov.jpg" alt="наши сотрудники" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/mykhail-270/mykhail-270.webp    1x,
+                    ./images/team/desktop/mykhail-270/mykhail-270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/mykhail-270/mykhail-270.jpg    1x,
+                    ./images/team/desktop/mykhail-270/mykhail-270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/mykhail-354/mykhail-354.webp    1x,
+                    ./images/team/tablet/mykhail-354/mykhail-354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/mykhail-354/mykhail-354.jpg    1x,
+                    ./images/team/tablet/mykhail-354/mykhail-354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/mykhail-450/mykhail-450.webp    1x,
+                    ./images/team/mobile/mykhail-450/mykhail-450@2x.webp 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/mykhail-450/mykhail-450.jpg    1x,
+                    ./images/team/mobile/mykhail-450/mykhail-450@2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+
+                <img
+                  class="team-img"
+                  src="./images/team/desktop/mykhail-270/mykhail-270.jpg"
+                  alt="наші працівники"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -371,11 +599,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- CUSTOMERS -->
 
-      <!-- <section class="section customers">
+      <section class="section customers">
         <div class="customers-page container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="customers-list list">
@@ -423,16 +651,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- FOOTER -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer_wrapper">
           <a class="logo-link link" href="./index.html"
-            ><span class="logo-link__accent">Web</span><span class="logo-link__accent_color_dark">Studio</span></a
+            ><span class="logo-link__accent">Web</span
+            ><span class="logo-link__accent_color_dark">Studio</span></a
           >
           <address class="adress">
             <ul class="adress adress-footer list">
@@ -451,7 +680,9 @@
                 >
               </li>
               <li class="adress-footer__item">
-                <a class="adress-footer__contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="adress-footer__contact link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -494,13 +725,10 @@
           <h3 class="join-subtitle">Підпишіться на розсилку</h3>
           <form class="join-form">
             <label class="join-form__field">
-              <input type="email" 
-              name="user_email" 
-              class="join-form__input" 
-              placeholder="E-mail"
-              />
+              <input type="email" name="user_email" class="join-form__input" placeholder="E-mail" />
             </label>
-            <button type="submit" class="join-form__btn button">Підписатися
+            <button type="submit" class="join-form__btn button">
+              Підписатися
               <svg class="join-submit-icon" width="24px" height="24px">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
@@ -508,7 +736,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- BACKDROP -->
 
