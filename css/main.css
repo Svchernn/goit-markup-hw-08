@@ -440,6 +440,12 @@ body {
     line-height: 0;
     cursor: pointer;
   }
+  .mobile-menu__close-icon {
+    transition: fill var(--transition-dur) var(--transition-func);
+  }
+  .mobile-menu__close-btn:hover .mobile-menu__close-icon, .mobile-menu__close-btn:focus .mobile-menu__close-icon {
+    fill: var(--accent-color);
+  }
   .menu-mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -668,7 +674,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 480px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/mobile/hero-480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/mobile/hero-480.jpg");
   background-color: var(--bg-color);
   background-size: cover;
   background-position: center;
@@ -677,18 +683,18 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/mobile/hero-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/mobile/hero-480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/tablet/hero-768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/tablet/hero-768.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/tablet/hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/tablet/hero-768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -699,12 +705,12 @@ body {
   }
   .overlay {
     max-width: 1600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/desktop/hero-1600.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/desktop/hero-1600.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/desktop/hero-1600@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/desktop/hero-1600@2x.jpg");
   }
 }
 .description-list__subtitle {
@@ -1074,6 +1080,9 @@ body {
   position: relative;
   overflow: hidden;
 }
+.project__item {
+  border: 1px solid #eeeeee;
+}
 
 .project__link {
   display: block;
@@ -1112,5 +1121,13 @@ body {
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 30px;
+  }
+  .project__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }/*# sourceMappingURL=main.css.map */
