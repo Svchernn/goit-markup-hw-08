@@ -40,6 +40,14 @@
     cursor: pointer;
   }
 
+  .mobile-menu__close-icon {
+    transition: fill var(--transition-dur) var(--transition-func);
+    .mobile-menu__close-btn:hover &,
+    .mobile-menu__close-btn:focus & {
+      fill: var(--accent-color);
+    }
+  }
+
   .menu-mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
