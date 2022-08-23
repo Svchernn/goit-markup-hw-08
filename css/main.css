@@ -456,10 +456,11 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    transition: color var(--transition-dur) var(--transition-func);
+    transition: color var(--transition-dur) var(--transition-func), border-bottom var(--transition-dur) var(--transition-func);
   }
   .menu-mobile-nav__link:hover, .menu-mobile-nav__link:focus {
     color: var(--accent-color);
+    border-bottom: 4px solid currentColor;
   }
   .menu-mobile-nav__link.current {
     color: var(--accent-color);
@@ -674,7 +675,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 480px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/mobile/hero-480.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile/hero-480.jpg");
   background-color: var(--bg-color);
   background-size: cover;
   background-position: center;
@@ -683,18 +684,18 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/mobile/hero-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile/hero-480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/tablet/hero-768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet/hero-768.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/tablet/hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet/hero-768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -705,12 +706,12 @@ body {
   }
   .overlay {
     max-width: 1600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/desktop/hero-1600.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop/hero-1600.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .overlay .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/desktop/hero-1600@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop/hero-1600@2x.jpg");
   }
 }
 .description-list__subtitle {

@@ -59,11 +59,13 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    transition: color var(--transition-dur) var(--transition-func);
+    transition: color var(--transition-dur) var(--transition-func),
+      border-bottom var(--transition-dur) var(--transition-func);
 
     &:hover,
     &:focus {
       color: var(--accent-color);
+      border-bottom: 4px solid currentColor;
     }
 
     &.current {
