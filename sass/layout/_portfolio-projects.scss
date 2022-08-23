@@ -1,9 +1,4 @@
 .project {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 30px;
-  column-gap: 30px;
-
   &__subtitle {
     font-size: 18px;
     line-height: 2;
@@ -11,25 +6,21 @@
     color: var(--primary-text-color);
     margin-bottom: 4px;
   }
-
   &__example {
     font-size: 16px;
     line-height: 1.88;
     color: var(--secondary-text-color);
   }
-
-  &__item {
-    flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid #eeeeee;
-  }
-
   &__text-wrapper {
     padding: 20px 24px;
   }
-
   &__wrapper {
     position: relative;
     overflow: hidden;
+  }
+
+  &__item {
+    border: 1px solid #eeeeee;
   }
 }
 
@@ -62,5 +53,23 @@
   .project__link:hover &,
   .project__link:focus & {
     transform: translate(0, 0);
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .project__item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
