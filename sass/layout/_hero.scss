@@ -15,7 +15,7 @@
   }
 
   &__button {
-    padding: 10px 32px;
+    padding: 10px 24px;
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
@@ -28,9 +28,14 @@
   }
 }
 
-@media screen and(max-width: 767px) {
+@media screen and (min-width: 480px) {
   .hero__name {
     width: 360px;
+  }
+}
+
+@media screen and(max-width: 1199px) {
+  .hero__name {
     font-size: 26px;
     line-height: 1.62;
   }
@@ -75,23 +80,33 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
   .hero__name {
     width: 700px;
     font-size: 44px;
     line-height: 1.36;
   }
+
+  .hero__button {
+    padding: 10px 32px;
+  }
+
   .overlay {
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/desktop/hero-1600.jpg');
+  }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .overlay {
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url('../images/hero/desktop/hero-1600@2x.jpg');
-      }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .overlay {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/desktop/hero-1600@2x.jpg');
     }
   }
 }

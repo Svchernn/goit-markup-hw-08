@@ -208,13 +208,17 @@ body {
   bottom: auto;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  height: 609px;
   padding: 40px;
   background-color: var(--third-theme-color);
   transition: transform var(--transition-dur) var(--transition-func), opacity var(--transition-dur) var(--transition-func), visibility var(--transition-dur) var(--transition-func);
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
 .modal-close__btn {
   position: absolute;
   top: 8px;
@@ -401,16 +405,13 @@ body {
     height: 100%;
     max-height: 796px;
     z-index: 1000;
-    position: absolute;
     top: 0;
-    right: auto;
-    bottom: auto;
     left: 0;
     background-color: var(--third-theme-color);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity var(--transition-dur) var(--transition-func);
+    transition: opacity var(--transition-dur) var(--transition-func), visibility var(--transition-dur) var(--transition-func);
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
   .mobile-menu.is-open {
@@ -656,7 +657,7 @@ body {
   color: var(--third-theme-color);
 }
 .hero__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
@@ -668,9 +669,13 @@ body {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .hero__name {
     width: 360px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hero__name {
     font-size: 26px;
     line-height: 1.62;
   }
@@ -703,10 +708,17 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
   .hero__name {
     width: 700px;
     font-size: 44px;
     line-height: 1.36;
+  }
+  .hero__button {
+    padding: 10px 32px;
   }
   .overlay {
     max-width: 1600px;
@@ -714,7 +726,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .overlay .overlay {
+  .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop/hero-1600@2x.jpg");
   }
 }
@@ -1018,13 +1030,10 @@ body {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
   }
   .footer_wrapper {
     margin-right: 70px;
-    width: 231px;
-  }
-  .join_wrapper {
-    margin-right: 93px;
   }
   .join-subtitle {
     text-align: start;
