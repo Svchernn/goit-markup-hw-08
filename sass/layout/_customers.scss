@@ -4,6 +4,10 @@
   gap: 30px;
 }
 
+.customers-item {
+  flex-basis: calc((100% - (2 - 1) 30px) / 2);
+}
+
 .customers-link {
   width: 210px;
   height: 92px;

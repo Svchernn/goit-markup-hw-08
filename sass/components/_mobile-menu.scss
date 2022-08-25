@@ -93,7 +93,7 @@
 
   .mobile-contact-list__link-accent {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.18;
     color: var(--accent-color);
   }
@@ -126,6 +126,12 @@
     &:focus {
       border: var(--accent-color);
     }
+  }
+}
+
+@media screen and(min-width: 480px) {
+  .mobile-contact-list__link-accent {
+    font-size: 34px;
   }
 }
 

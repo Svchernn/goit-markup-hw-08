@@ -29,6 +29,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team {
     &__list {
@@ -36,6 +42,7 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+
     &__item {
       flex-basis: calc((100% - 30px) / 2);
     }
@@ -47,6 +54,7 @@
     &__item {
       flex-basis: calc((100% - 90px) / 4);
     }
+
     &__wrapper {
       padding-bottom: 30px;
     }

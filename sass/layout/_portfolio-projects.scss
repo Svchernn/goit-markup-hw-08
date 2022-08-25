@@ -38,7 +38,7 @@
   @include abs-position(0, auto, auto, 0);
   width: 100%;
   height: 100%;
-  transform: translate(0, 100%);
+  transform: translate(0, 101%);
   transition: transform var(--transition-dur) var(--transition-func);
 
   font-size: 18px;
@@ -53,6 +53,11 @@
   .project__link:hover &,
   .project__link:focus & {
     transform: translate(0, 0);
+  }
+}
+@media screen and(max-width: 767px) {
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
